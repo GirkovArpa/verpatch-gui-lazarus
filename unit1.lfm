@@ -1,0 +1,187 @@
+object Form1: TForm1
+  Left = 554
+  Height = 254
+  Top = 189
+  Width = 299
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Verpatch GUI Lazarus'
+  ClientHeight = 234
+  ClientWidth = 299
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.8.0'
+  object Edit1: TEdit
+    Left = 112
+    Height = 23
+    Top = 0
+    Width = 184
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 112
+    Height = 23
+    Top = 26
+    Width = 184
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 112
+    Height = 23
+    Top = 52
+    Width = 184
+    TabOrder = 2
+    Text = '0.0.0.0'
+  end
+  object Edit4: TEdit
+    Left = 112
+    Height = 23
+    Top = 78
+    Width = 184
+    TabOrder = 3
+  end
+  object Edit5: TEdit
+    Left = 112
+    Height = 23
+    Top = 104
+    Width = 184
+    TabOrder = 4
+    Text = '0.0.0.0'
+  end
+  object Edit6: TEdit
+    Left = 112
+    Height = 23
+    Top = 130
+    Width = 184
+    TabOrder = 5
+  end
+  object Edit7: TEdit
+    Left = 112
+    Height = 23
+    Top = 156
+    Width = 184
+    TabOrder = 6
+    Text = '0.0.0.0'
+  end
+  object Edit8: TEdit
+    Left = 112
+    Height = 23
+    Top = 182
+    Width = 184
+    TabOrder = 7
+  end
+  object Edit9: TEdit
+    Left = 112
+    Height = 23
+    Top = 208
+    Width = 184
+    TabOrder = 8
+  end
+  object Label1: TLabel
+    Left = 57
+    Height = 15
+    Top = 4
+    Width = 51
+    Caption = 'Filename:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 30
+    Width = 84
+    Caption = 'File Description:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 46
+    Height = 15
+    Top = 56
+    Width = 62
+    Caption = 'File Version:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 28
+    Height = 15
+    Top = 82
+    Width = 80
+    Caption = 'Product Name:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 22
+    Height = 15
+    Top = 108
+    Width = 86
+    Caption = 'Product Version:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 21
+    Height = 15
+    Top = 134
+    Width = 87
+    Caption = 'Legal Copyright:'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 39
+    Height = 15
+    Top = 160
+    Width = 69
+    Caption = 'Private Build:'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 18
+    Height = 15
+    Top = 186
+    Width = 90
+    Caption = 'Company Name:'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 12
+    Height = 15
+    Top = 212
+    Width = 96
+    Caption = 'Original Filename:'
+    ParentColor = False
+  end
+  object MainMenu1: TMainMenu
+    left = 8
+    object MenuItemFile: TMenuItem
+      Caption = '&File'
+      OnClick = MenuItemFileClick
+      object MenuItemOpen: TMenuItem
+        Caption = '&Open'
+        OnClick = MenuItemOpenClick
+      end
+      object MenuItemSave: TMenuItem
+        Caption = '&Save As ...'
+        OnClick = MenuItemSaveClick
+      end
+    end
+    object MenuItemHelp: TMenuItem
+      Caption = '&Help'
+      object MenuItemUsage: TMenuItem
+        Caption = '&Usage'
+        OnClick = MenuItemUsageClick
+      end
+      object MenuItemAbout: TMenuItem
+        Caption = '&About'
+        OnClick = MenuItemAboutClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 27
+    top = 61
+  end
+  object SaveDialog1: TSaveDialog
+    left = 31
+    top = 100
+  end
+end
